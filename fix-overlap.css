@@ -1,0 +1,19 @@
+/* 修复回到顶部按钮与小助手重叠问题 */
+
+/* 方案1: 调整回到顶部按钮位置，使其在小助手上方 */
+button[class*="fixed"][class*="bottom-28"] {
+  bottom: 180px !important; /* 移到更高的位置 */
+}
+
+@media (min-width: 768px) {
+  button[class*="fixed"][class*="bottom-28"] {
+    bottom: 180px !important;
+  }
+}
+
+/* 或者方案2: 调整小助手按钮位置 */
+/* 
+button[class*="fixed"][class*="z-[70]"] {
+  bottom: 24px !important;
+}
+*/
